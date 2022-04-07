@@ -22,14 +22,14 @@ class Item3Fragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val slideshowViewModel =
+        val item3ViewModel =
             ViewModelProvider(this).get(Item3ViewModel::class.java)
 
         _binding = FragmentItem3Binding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textItem3
-        slideshowViewModel.text.observe(viewLifecycleOwner) {
+        item3ViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

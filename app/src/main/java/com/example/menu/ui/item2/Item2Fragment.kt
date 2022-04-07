@@ -22,14 +22,14 @@ class Item2Fragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val galleryViewModel =
+        val item2ViewModel =
             ViewModelProvider(this).get(Item2ViewModel::class.java)
 
         _binding = FragmentItem2Binding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textItem2
-        galleryViewModel.text.observe(viewLifecycleOwner) {
+        item2ViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

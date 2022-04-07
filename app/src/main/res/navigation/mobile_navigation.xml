@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_item1">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.menu.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_item1"
+        android:name="com.example.menu.ui.item1.Item1Fragment"
+        android:label="@string/navmenu_item1"
+        tools:layout="@layout/fragment_item1" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.menu.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_item2"
+        android:name="com.example.menu.ui.item2.Item2Fragment"
+        android:label="@string/navmenu_item2"
+        tools:layout="@layout/fragment_item2" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.menu.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_item3"
+        android:name="com.example.menu.ui.item3.Item3Fragment"
+        android:label="@string/navmenu_item3"
+        tools:layout="@layout/fragment_item3" />
 </navigation>

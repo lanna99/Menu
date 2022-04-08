@@ -2,11 +2,14 @@ package com.example.menu.ui.item2
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.MenuInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.PopupMenu
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.menu.R
 import com.example.menu.databinding.FragmentItem2Binding
 
 class Item2Fragment : Fragment() {
@@ -32,6 +35,14 @@ class Item2Fragment : Fragment() {
         item2ViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
+
+        _binding!!.buttonPopup.setOnClickListener {
+            val popup = PopupMenu(this.activity, _binding!!.buttonPopup)
+            val inflater: MenuInflater = popup.menuInflater
+            inflater.inflate(R.menu.popup, popup.menu)
+            popup.show()
+        }
+
         return root
     }
 

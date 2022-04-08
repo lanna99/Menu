@@ -18,4 +18,9 @@
     <string name="context_item1">Item1</string>
     <string name="context_item2">Item2</string>
     <string name="context_item3">Item3</string>
+
+    <string name="popup_menu">Popup Menu</string>
+    <string name="popup_item1">Item1</string>
+    <string name="popup_item2">Item2</string>
+    <string name="popup_item3">Item3</string>
 </resources>

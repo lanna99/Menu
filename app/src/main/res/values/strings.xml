@@ -13,6 +13,9 @@
     <string name="navmenu_item1">Item1</string>
     <string name="navmenu_item2">Item2</string>
     <string name="navmenu_item3">Item3</string>
+    <string name="navmenu_item4">Item4</string>
+    <string name="navmenu_item5">Item5</string>
+    <string name="navmenu_group">Group</string>
 
     <string name="context_menu">Context Menu</string>
     <string name="context_item1">Item1</string>

@@ -17,4 +17,15 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/navmenu_item3" />
     </group>
+
+    <item android:title="@string/navmenu_group">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/item4" android:icon="@android:drawable/ic_menu_share"
+                    android:title="@string/navmenu_item4" />
+                <item android:id="@+id/item5" android:icon="@android:drawable/ic_menu_send"
+                    android:title="@string/navmenu_item5" />
+            </group>
+        </menu>
+    </item>
 </menu>
